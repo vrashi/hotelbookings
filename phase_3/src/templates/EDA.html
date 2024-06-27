@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="container-fluid" style="padding-top:2vh;padding-left:10vw;padding-right:10vw;">
+    <h2 style="text-align:center" >({{ modelName }})</h2>
+    <div class="container-fluid" style="padding-top:5vh;padding-left:2vw;padding-right:2vw;">
+      <div class="row">
+        <div class="col-6 col-sm col-md">
+          <img style="width:100%" src="/static/Visualized_Results/EDA/distribution of numerical variables.png" alt="graph1"><br>
+          <p style="text-align:center;font-size:1.5rem">
+            Distribution of Numerical Variables<br>
+          </p>
+        </div><br>
+      </div>
+      <div class="row"></div>
+      <div class="row">
+        <br><div class="col-6 col-sm col-md">
+          <img style="width:100%" src="/static/Visualized_Results/EDA/distribution of categorical variables.png" alt="graph2"><br>
+          <p style="text-align:center;font-size:1.5rem">
+            Distribution of Categorical Variables
+          </p>
+        </div><br>
+      </div>
+      <div class="row"></div>
+        <div class="row">
+          <div class="col-6 col-sm col-md">
+            <img style="width:100%" src="/static/Visualized_Results/EDA/correlation heatmap.png" alt="graph2"><br>
+            <p style="text-align:center;font-size:1.5rem">
+              Correlation Heatmap
+            </p>
+          </div><br>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+          <div class="col-6 col-sm col-md">
+            <img style="width:100%" src="/static/Visualized_Results/EDA/categorical numerical variables relationship.png" alt="graph2"><br>
+            <p style="text-align:center;font-size:1.5rem">
+              Relationship between Categorical and Numerical Variables
+            </p>
+          </div><br>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+          <div class="col-6 col-sm col-md">
+            <img style="width:100%" src="/static/Visualized_Results/EDA/daily rate of the bookings.png" alt="graph2"><br>
+            <p style="text-align:center;font-size:1.5rem">
+              Daily Rate of the Bookings
+            </p>
+          </div><br>
+        </div>
+        <div class="row"></div>
+        <div class="row">
+          <div class="col-6 col-sm col-md">
+            <img style="width:100%" src="/static/Visualized_Results/EDA/bookings over time.png" alt="graph2"><br>
+            <p style="text-align:center;font-size:1.5rem">
+              Bookings Over-Time
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="container-fluid" style="padding-top:2vh;padding-left:10vw;padding-right:10vw;">
+    <h2 style="text-align:center" >({{ modelName }})</h2>
+    <div class="container-fluid" style="padding-top:5vh;padding-left:2vw;padding-right:2vw;">
+      <div class="row">
+        <div class="col-6 col-sm col-md">
+          <img style="width:100%" src="/static/Visualized_Results/Training/{{ modelName }}/{{ modelData[1] }}.png" alt="graph1">
+          <p style="text-align:center;font-size:1.5rem">
+            {{ modelData[1] }}
+          </p>
+        </div>
+        
+      </div>
+      <div class="row"></div>
+        <div class="col">
+          <p style="text-align:center;font-size:1.5rem">
+            Accuracy of Prediction: {{ modelData[0] }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
